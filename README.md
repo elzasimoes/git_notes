@@ -53,8 +53,13 @@
 
 ## `git restore <arquivo>`
 - Restaura o estado de um arquivo específico ao último commit, descartando as mudanças feitas localmente.
-  
----
+
+## `git restore --source=<commit> <arquivo>`
+- Restaura o estado de um arquivo específico a partir de um commit especificado. Exemplo:
+
+  ```
+  git restore --source=5081a55bc92af2917c8519f16a7412b86ba3b1c2 index.html
+  ```
 
 ### Diferença entre `merge` e `rebase`
 - O `merge` junta o trabalho de duas branches, podendo gerar um merge commit.
